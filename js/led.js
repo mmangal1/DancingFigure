@@ -13,12 +13,36 @@ jQuery(document).ready(function(){
            $(".led_"+y[i]+x[j]).css("background", "red");
        }
    }
-   var x = [2, 7];
-   for(i=0; i< x.length; i++){
-       $(".led_"+4+x[i]).css("background", "red");
-   }
 });
 
-function handsup(){
-     
+handsUp();
+handsNeutral();
+handsDown();
+
+function handsNeutral(){
+     $(".led_"+"32").css("background", "none");
+     $(".led_"+"37").css("background", "none");
+     $(".led_"+"42").css("background", "red");
+     $(".led_"+"47").css("background", "red");
+     $(".led_"+"52").css("background", "none");
+     $(".led_"+"57").css("background", "none");
 }
+
+function handsUp(){
+     $(".led_"+"32").css("background", "red");
+     $(".led_"+"37").css("background", "red");
+     $(".led_"+"42").css("background", "none");
+     $(".led_"+"47").css("background", "none");
+     $(".led_"+"52").css("background", "none");
+     $(".led_"+"57").css("background", "none");
+}
+
+function handsDown(){
+     $(".led_"+"32").css("background", "none");
+     $(".led_"+"37").css("background", "none");
+     $(".led_"+"42").css("background", "none");
+     $(".led_"+"47").css("background", "none");
+     $(".led_"+"52").css("background", "red");
+     $(".led_"+"57").css("background", "red");
+}
+
