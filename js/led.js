@@ -13,11 +13,16 @@ jQuery(document).ready(function(){
            $(".led_"+y[i]+x[j]).css("background", "red");
        }
    }
+
+    $(".HandsUp").click(function(){handsUp();});
+    $(".HandsNeutral").click(function(){handsNeutral();});
+    $(".HandsDown").click(function(){handsDown();});
+
 });
 
-handsUp();
-handsNeutral();
-handsDown();
+function GoSleep(t){
+    setTimeout(function(){}, t);
+}
 
 function handsNeutral(){
      $(".led_"+"32").css("background", "none");
@@ -45,4 +50,3 @@ function handsDown(){
      $(".led_"+"52").css("background", "red");
      $(".led_"+"57").css("background", "red");
 }
-
