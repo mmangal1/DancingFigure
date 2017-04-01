@@ -1,0 +1,10 @@
+#LedBox .col{
+    border-color: black;
+    border-style: solid;
+    border-width: thick;
+    padding-bottom:10%;
+}
+
+.card{
+    width:40%;
+}
