@@ -14,15 +14,12 @@ jQuery(document).ready(function(){
        }
    }
 
+    handsNeutral();
     $(".HandsUp").click(function(){handsUp();});
     $(".HandsNeutral").click(function(){handsNeutral();});
     $(".HandsDown").click(function(){handsDown();});
 
 });
-
-function GoSleep(t){
-    setTimeout(function(){}, t);
-}
 
 function handsNeutral(){
      $(".led_"+"32").css("background", "none");
